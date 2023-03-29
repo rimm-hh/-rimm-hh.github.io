@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+:root {
+    --color-Ellipse-24: #EDD008;
+    --color-Ellipse-18: #10CC9C;
+    --color-Ellipse-19: #00B2A0;
+    --color-Ellipse-20: #00979B;
+    --color-Ellipse-21: #007B8C;
+    --color-Ellipse-22: #216175;
+    --color-Ellipse-23: #2F4858;
+}
+
+/* eror */
+
+.container-eror {
+    width: 940px;
+    height: 680px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #04272829 0px 4px 23px 0px;
+    padding: 54px 88px;
+
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.cancel-eror {
+    position: absolute;
+    font-size: 35px;
+    right: 24px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.container-eror img{
+    margin-bottom: 55px;
+}
+
+.container-eror p{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    cursor: default;
+
+    margin-bottom: 36px;
+} 
+.container-eror p span{
+    color: var(--color-Ellipse-20);
+} 
+
+.container-eror button{
+    width: 186px;
+    height: 44px;
+    border-radius: 5px;
+    border: 3px solid var(--color-Ellipse-20);
+    outline: none;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-Ellipse-20);
+    cursor: pointer;
+}
+
+.container-eror button:hover {
+    background-color: var(--color-Ellipse-20);
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .container-eror {
+        width: 90vw;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 501px) {
+    .container-eror {
+        width: 100%;
+        height: auto;
+        padding: 50px 16px;
+    }
+
+    .cancel-eror {
+        top: 16px;
+        right: 20px;
+    }
+
+    .container-eror p{
+        font-size: 18px;
+    }
+
+    .container-eror img{
+        width: 60vw;
+    }
+
+    .container-eror button{
+        width: 70vw;
+        height: 9vw;
+        font-size: 3.5vw;
+    }
+}
